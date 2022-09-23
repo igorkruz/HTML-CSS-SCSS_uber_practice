@@ -1,0 +1,284 @@
+@media (max-width: 1199.98px) {
+    .menu{
+        &_link{
+            font-size: 13px;
+        }
+        &_item{
+            padding-right: 20px;
+        }
+    }
+
+    .promo{
+        &_header{
+            font-size: 45px;
+        }
+    }
+
+    .reasons{
+        &_block{
+            align-items:flex-start;
+        }
+        &_descr{
+            width: 300px;
+        }
+    }
+
+    .mobile{
+        &_block{
+            width: 300px;
+        }
+    }
+}
+
+@media (max-width: 991.9px){
+    .menu{
+        &_link{
+            font-size: 10px;
+        }
+        &_item{
+            padding-right: 8px;
+        }
+    }
+
+    .subheader{
+        &_logo{
+            img{
+            width: 100%;
+            }
+        }
+        &_official{
+            font-size: 10px;
+        }
+
+        &_phone{
+            font-size: 18px;
+        }
+        &_btn{
+            width: 100%;
+            height: 40px;
+            margin-top: 21px;
+        }
+    }
+
+    .promo{
+        &_header{
+            font-size: 40px;
+        }
+        &_subheader{
+            font-size: 30px;
+        }
+    }
+
+    .reasons{
+        &_block{
+            flex-direction: column;
+            align-items:center;
+        }
+        &_round{
+            margin-right: 0 ;
+        }
+        &_descr{
+            margin-top: 20px;
+        }
+        
+    }
+
+    .title{
+        font-size: 35px;
+    }
+
+}
+
+@media (max-width: 767px){
+    .menu{
+        flex-direction: column;
+        position: fixed;
+        justify-content: center;
+        align-items:center;
+        top: 0;
+        left: -100%;
+        width: 50%;
+        height: 100vh;
+        padding: 20px 15px;
+        background-color: rgba(0, 0, 0, .8);
+        transition: .8s all;
+
+        &_active{
+            left: 0;
+        }
+
+        &_item{
+            padding-right: 0;
+            border:none;
+            margin-top: 10px;
+            
+        }
+        &_link{
+            font-size: 20px;
+        }
+    }
+
+    .hamburger{
+        display: block;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 10px;
+        width: 30px;
+        span{
+            display: block;
+            height: 2px;
+            width: 100%;
+            margin-bottom: 2px;
+            background-color: #fff;
+            transition: .6s all;
+        }
+
+        &_active{
+            span{
+                margin-bottom: -2px;
+                
+                &:nth-child(1){
+                    transform: translateY(3px) rotate(-45deg);
+                }
+                &:nth-child(2){
+                    display: none;
+                }
+                &:nth-child(3){
+                    transform: translateY(3px) rotate(45deg);
+                }
+            }
+        }
+    }
+
+    .xs-hidden{
+        display: none;
+    }
+    .xs-visible{
+        display: block;
+    }
+
+    .subheader{
+        &_phone{
+            display: block;
+            margin-top: 10px;
+            font-size: 16px;
+            line-height: 8px;
+            text-align: center;
+            text-transform: uppercase;
+            color: #FFFFFF;
+        }
+        &_btn{
+            display: block;
+            margin: 0 auto;
+            width: 200px;
+            height: 40px;
+            margin-top: 10px;
+        }
+    }
+
+    .promo{
+        &_header{
+            line-height: 40px;
+        }
+        &_subheader{
+            font-size: 30px;
+        }
+    }
+
+}
+
+
+@media (max-width: 575px){
+    nav{
+        height: 30px;
+    }
+    header{
+        height: 30px;
+    }
+
+    .subheader{
+        height: 60px;
+        top: 30px;
+
+        &_official{
+            display: none;
+        }
+        &_logo{
+            margin-top: 16px;
+        }
+        &_phone{
+            display: block;
+            margin-top: 11px;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 8px;
+        }
+        &_btn{
+            display: block;
+            margin: 0 auto;
+            width: 110px;
+            height: 22px;
+            margin-top: 6px;
+            font-size: 10px;
+            line-height: 22px;
+        }
+    }
+
+    .promo{
+        min-height: 400px;
+        padding: 73px 0 35px 0;
+        &_header{
+            font-size: 30px;
+            padding: 0 24px;
+            line-height: 35px;
+        }
+        &_subheader{
+            font-size: 20px;
+            padding: 0 10px;
+            margin-top: 34px;
+            line-height: 30px;
+        }
+        
+        &_descr{
+            display: none;
+        }
+
+        &_btn{
+            width: 210px;
+            height: 50px;
+            margin-top: 72px;
+        }
+        
+    }
+
+    .menu{
+        width: 85%;
+    }
+
+    .reasons{
+
+        padding: 20px 0 38px 0;
+
+        &_block{
+            margin-top: 24px;
+        }
+        &_round{
+            width: 100px;
+            height: 100px;
+        }
+        &_descr{
+            width: 100%;
+            margin-top: 27px;
+        }
+        &_subtitle{
+            font-size: 16px;
+        }
+    }
+
+    .title{
+        font-size: 16px;
+        margin-top: 18px;
+        line-height: 16px;
+    }
+}
